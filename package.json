@@ -6,7 +6,8 @@
     "prepare": "husky install",
     "format": "prettier --cache --write .",
     "lint": "eslint --cache --fix packages/*/src/**/*.{js,ts,jsx,tsx}",
-    "publish": "pnpm build && lerna publish --force-publish=*",
+    "prepublish": "pnpm build",
+    "publish": "pnpm -r publish --force --access=public",
     "build": "pnpm -r --filter=./packages/* build",
     "ci-publish": "tsx scripts/publishCI.ts",
     "docs:dev": "vitepress dev docs",
@@ -74,8 +75,7 @@
     "vite": "^4.3.4",
     "vite-plugin-solid": "^2.7.0",
     "vitepress": "^1.0.0-alpha.75",
-    "vue": "^3.2.47",
-    "lerna": "^7.0.0"
+    "vue": "^3.2.47"
   },
   "engines": {
     "node": ">=16.0.0"

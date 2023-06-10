@@ -1,6 +1,6 @@
 {
   "name": "@xdoer/monkey-shared",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "build": "tsc --outDir lib & babel src --out-dir lib --extensions \".ts\""
   },

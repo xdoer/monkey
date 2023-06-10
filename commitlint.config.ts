@@ -1,5 +1,5 @@
-import type { UserConfig } from "@commitlint/types";
+import type { UserConfig } from '@commitlint/types'
 
 export default <UserConfig>{
-  extends: ["@commitlint/config-conventional"],
-};
+  extends: ['@commitlint/config-conventional'],
+}

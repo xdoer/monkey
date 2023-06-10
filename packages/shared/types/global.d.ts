@@ -1,1 +1,1 @@
-declare const unsafeWindow: typeof window;
+declare const unsafeWindow: typeof window

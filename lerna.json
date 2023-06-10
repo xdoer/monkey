@@ -1,0 +1,11 @@
+{
+  "npmClient": "pnpm",
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "ignoreChanges": ["ignored-file", "*.md", "*.tsconfig.json"],
+      "message": "chore(release): publish",
+      "registry": "https://registry.npmjs.org"
+    }
+  }
+}

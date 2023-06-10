@@ -1,0 +1,18 @@
+{
+  "name": "@xdoer/monkey-shared",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "tsc --outDir lib & babel src --out-dir lib --extensions \".ts\""
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-typescript": "^7.16.7",
+    "tslib": "^2.2.0",
+    "typescript": "4.5.4"
+  }
+}

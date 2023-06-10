@@ -5,12 +5,13 @@ interface Match {
 
 interface FetchHookOptions {
   match: Match[]
+  ctx: Window
 }
 
-export function fetchHook({ match }: FetchHookOptions) {
-  const _fetch = unsafeWindow.fetch
+export function fetchHook({ match, ctx }: FetchHookOptions) {
+  const _fetch = ctx.fetch
 
-  unsafeWindow.fetch = async (url, options) => {
+  ctx.fetch = async (url, options) => {
     const res = await _fetch(url, options)
 
     const matched = match.filter(i => i.pattern.test('' + url))

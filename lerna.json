@@ -7,5 +7,6 @@
       "message": "chore(release): publish",
       "registry": "https://registry.npmjs.org"
     }
-  }
+  },
+  "version": "0.0.1"
 }
